@@ -1,0 +1,192 @@
+
+@media (max-width: 768px) {
+    .nav{
+        position: absolute;
+        top: 30px;
+        left: 0;
+        width: 100%;
+        background: rgb(0, 140, 255);
+        opacity: 0.8;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+        transform: translateY(-120%);
+        transition: 0.4s;
+        z-index: 9;
+    }
+
+    .nav.active{
+    top: 90px;
+    transform: translateY(0);
+   }
+
+   .burger{
+    display: flex;
+  }
+
+  
+
+  .main-about{
+    height: 550px;
+  }
+
+  .text-1{
+    font-weight: bold;
+    text-align: center;
+    margin: 20px;
+    font-size: 25px;
+    color: white;
+}
+
+#autoText{
+    min-height: 50px;
+    font-size: 12px;
+}
+
+#block-try{
+
+   padding: 8px;
+}
+
+.picture{
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 30px;
+    margin-left: 40px;
+
+}
+.picture-img-1{
+    border-radius: 10px;
+    width: 130px;
+    height: 150px;
+    background: url(img/cinema.png) center / cover no-repeat;
+
+}
+
+.picture-img-2{
+     transform: rotate(-5deg);
+    border-radius: 10px;
+    width: 130px;
+    height: 150px;
+    background: wheat;
+    background: url(img/travel-2.png) center / cover no-repeat;
+
+}
+
+.picture-img-3{
+    border-radius: 10px;
+    width: 130px;
+    height: 150px;
+    background: wheat;
+    background: url(img/work.png) center / cover no-repeat;
+
+}
+
+.picture-img-4{
+    border-radius: 10px;
+    width: 130px;
+    height: 150px;
+    background: wheat;
+    background: url(img/speak-3.en.png) center / cover no-repeat;
+
+}
+
+.lessons-main{
+    margin: 20px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.head{
+    margin: 20px;
+    text-align: center;
+}
+
+
+.lesson-1{
+    width: 270px;
+    height: 350px;
+    background: rgb(0, 128, 255);
+    border-radius: 20px;
+}
+
+.lesson-2{
+    width: 320px;
+    height: 200px;
+    background: rgb(89, 247, 94);
+    border-radius: 20px;
+}
+
+.lesson-3{
+    width: 300px;
+    height: 300px;
+    background: rgb(230, 189, 28);
+    border-radius: 20px;
+}
+
+.lesson-4{
+    margin-top: 0;
+    width: 300px;
+    height: 200px;
+    background: rgb(113, 98, 230);
+    border-radius: 20px;
+}
+
+
+
+.lesson-1 img{
+    margin: 30px;
+    width: 120px;
+    height: 120px;
+}
+  
+}
+
+@media (hover: none) {
+    header{
+        -webkit-tap-highlight-color: transparent;
+        user-select: none;
+    }
+
+    .nav a:active{
+         transform: scale(1.05);
+         color: rgb(242, 255, 0);
+    }
+
+    .main-about{
+         -webkit-tap-highlight-color: transparent;
+        user-select: none;
+    }
+
+    .lessons-main{
+        -webkit-tap-highlight-color: transparent;
+        user-select: none;
+
+    }
+
+    .ready-lesson:active{
+         transform: rotate(6deg) scale(1.1);
+    }
+}
+
+
+
+/* Computer */
+
+@media(hover: hover) {
+    .nav a:hover{
+    transform: scale(1.05);
+    color: rgb(251, 255, 0);
+}
+
+.ready-lesson:hover{
+    transform: rotate(6deg) scale(1.1);
+    
+}
+
+}
