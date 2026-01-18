@@ -16,6 +16,10 @@
         z-index: 9;
     }
 
+    .logo h1{
+        font-size: 15px;
+    }
+
     .nav.active{
     top: 90px;
     transform: translateY(0);
