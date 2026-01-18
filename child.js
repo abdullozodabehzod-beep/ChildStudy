@@ -45,3 +45,20 @@ function typeLoop() {
 }
 
 typeLoop()
+
+//SCROLL
+
+const tabs = document.querySelectorAll('.tab')
+
+const content = document.querySelectorAll('.tab-content')
+
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'))
+        content.forEach(c => c.classList.remove('active'))
+
+        tab.classList.add('active')
+        document.getElementById(tab.dataset.tab).classList.add('active')
+    })
+})
+

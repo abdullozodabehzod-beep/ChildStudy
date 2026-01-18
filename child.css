@@ -209,6 +209,7 @@ header{
     height: 430px;
     background: rgb(0, 128, 255);
     border-radius: 20px;
+    
 }
 
 .lesson-2{
@@ -223,6 +224,7 @@ header{
     height: 330px;
     background: rgb(230, 189, 28);
     border-radius: 20px;
+    
 }
 
 .lesson-4{
@@ -231,9 +233,10 @@ header{
     height: 300px;
     background: rgb(113, 98, 230);
     border-radius: 20px;
+    
 }
 
-.lesson-1 p:nth-child(1) {
+.lessons-main h3 {
     text-align: center;
     color: white;
     font-size: 20px;
@@ -241,7 +244,7 @@ header{
     margin: 10px;
 }
 
-.lesson-1 p:nth-child(2) {
+.lessons-main p {
     text-align: center;
     color: white;
     font-size: 15px;
@@ -273,3 +276,92 @@ header{
     height: 180px;
 }
 
+.lesson-2 img{
+    width: 170px;
+    height: 170px;
+}
+
+.lesson-3 img{
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+.lesson-4 img {
+    width: 140px;
+    height: 140px;
+}
+
+/* ---------------------------------------------------------------------TABS */
+
+.tabs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+    border:  2px solid rgb(0, 140, 255) ;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.tab{
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    transition: background 0.3 ease
+    color 0.3s ease;
+}
+
+.tab.active{
+    background: rgb(74, 171, 255);
+    color: white;
+}
+
+
+.tab-content{
+    display: none;
+    animation: fade 0.4s ease;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.grid-4{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.grid-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 29px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.box {
+    background: rgb(79, 159, 249);
+    color: white;
+    border-radius: 12px;
+    width: 300px;
+    height: 200px;
+
+}
+
+@keyframes fade{
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
