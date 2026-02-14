@@ -341,17 +341,23 @@ header{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 29px;
-    max-width: 400px;
+    max-width: 600px;
     margin: auto;
 }
 
 .box {
+    padding: 20px;
     background: rgb(79, 159, 249);
     color: white;
     border-radius: 12px;
     width: 300px;
-    height: 200px;
+    height: 150px;
 
+}
+
+.box p:nth-child(2){
+    position: relative;
+    top: 7px;
 }
 
 @keyframes fade{
@@ -364,4 +370,146 @@ header{
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+
+.box a{
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+/*ScrollInter*/
+
+.InterSection{
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.from-left { transform: translateX(-100px); }
+
+.from-right { transform: translateX(100px); }
+
+.from-top  { transform: translateY(-100px); }
+
+.from-bottom { transform: translateY(100px); }
+
+.show{
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.order-course{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.order-course-1{
+    padding: 20px;
+    border-radius: 20px;
+   width: 500px;
+   height: 300px;
+   background: rgb(226, 223, 223);
+   
+}
+
+.order-course-2{
+   display: flex;
+   justify-content: space-around;
+   border-radius: 20px;
+   width: 500px;
+   height: 300px;
+   background: none; 
+   border: 2px solid rgb(122, 122, 122);
+   padding: 10px;
+}
+
+.order-course-1 img{
+    width: 50px;
+    height: 50px;
+}
+
+.btn-course{
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    margin: 10% 30%;
+    border: 0;
+    background: rgb(16, 172, 250);
+    padding: 10px;
+    width: 150px;
+    border-radius: 8px;
+}
+
+.level-1{
+    margin-top: auto;
+    width: 13%;
+    height: 30%;
+    background: rgb(218, 238, 252);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.level-2{
+    margin-top: auto;
+    width: 13%;
+    height: 50%;
+    background: rgb(162, 216, 255);
+    border-radius: 18px;
+     padding: 10px;
+}
+
+.level-3{
+    margin-top: auto;
+    width: 13%;
+    height: 70%;
+    background: rgb(106, 193, 255);
+    border-radius: 22px;
+     padding: 10px;
+}
+
+.level-4{
+    margin-top: auto;
+    width: 13%;
+    height: 90%;
+    background: rgb(38, 160, 247);
+    border-radius: 24px;
+     padding: 10px;
+}
+
+.order-course-2 p{
+    text-align: center;
+    margin-top: auto;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: silver;
+    width: 100%;
+    height: 150px;
+}
+
+footer h2{
+    margin-bottom: 5px;
+}
+
+footer p{
+    opacity: 0.7;
+    margin-bottom: 5px;
+}
+
+#contact{
+    display: flex;
+    gap: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+#contact p i{
+    font-size: 1.5rem;
 }
