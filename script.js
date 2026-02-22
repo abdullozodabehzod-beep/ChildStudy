@@ -76,3 +76,5 @@ document.querySelectorAll('.InterSection').forEach(el => {
     observer.observe(el)
 })
 
+
+

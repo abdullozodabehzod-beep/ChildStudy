@@ -436,11 +436,15 @@ header{
     height: 50px;
 }
 
-.btn-course{
+.btn-course {
+    position: relative;
+    top: 40px;
+    left: 35%;
+    text-decoration: none;
     font-size: 15px;
     color: white;
     cursor: pointer;
-    margin: 10% 30%;
+    text-align: center;
     border: 0;
     background: rgb(16, 172, 250);
     padding: 10px;
@@ -521,4 +525,67 @@ footer p:hover{
 
 #contact i{
     font-size: 1.5rem;
+}
+
+/* LEVEL_TEST */
+
+.levelUpHeader h1 {
+    color: white;
+    padding: 10px;
+
+}
+
+.levelUpHeader nav a{
+    color: white;
+    text-decoration: none;
+}
+
+.welcomeLevel{
+    margin: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.welcomeLevel-1{
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    width: 50%;
+    background: rgb(204, 204, 204);
+}
+
+.courseChoose-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.courseChoose{
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    text-align: start;
+    border-radius: 8px;
+    width: 70%;
+    background: rgb(224, 222, 222);
+    padding: 10px;
+}
+
+.welcomeLevel img.boy{
+    width: 30%;
+    height: 700px;
+}
+
+#replaceBtn{
+    cursor: pointer;
+    border-radius: 8px;
+    color: white;
+    background: rgb(4, 185, 245);
+    border: none;
+    padding: 13px;
+    width: 120px;
+    transition: 
+    background 0.3s ease-in-out;
 }
