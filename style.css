@@ -506,13 +506,15 @@ footer h2{
     margin-bottom: 5px;
 }
 
-footer p{
+footer p a{
+    text-decoration: none;
+    color: black;
     cursor: pointer;
     opacity: 0.7;
     margin-bottom: 5px;
 }
 
-footer p:hover{
+footer p a:hover{
     border-bottom: 2px solid black;
 }
 
@@ -588,4 +590,18 @@ footer p:hover{
     width: 120px;
     transition: 
     background 0.3s ease-in-out;
+}
+
+
+/*СЕРТИФАКАТЫ*/
+
+#nameSertif{
+    text-align: center;
+    margin: 20px;
+}
+
+/*bEGGINER*/
+
+.A0-Header{
+    
 }
